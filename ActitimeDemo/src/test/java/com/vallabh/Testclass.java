@@ -1,5 +1,8 @@
 package com.vallabh;
 
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -19,6 +22,9 @@ public class Testclass {
 		
 		ApplicationHeaderPage ap=new ApplicationHeaderPage(d);
 	//	ap.opentaskpage();	String url=d.getCurrentUrl();	String title=d.getTitle();
+		ArrayList<String> count=new ArrayList(d.findElements(By.tagName("//a")));
+		int number=count.size();
+		System.out.println(number);
 		
 //		if(url.equals("http://localhost:8083/login.do")) {
 //			System.out.println("Test Case PASSED");
