@@ -3,6 +3,13 @@
 <suite name="Suite">
   <test name="Test">
   <parameter name="browser" value="chrome"/>
+  
+  <groups>
+  			<run>
+  			<include name="Sanity Testing"/>
+  			
+  		</run>
+  </groups>
     <classes>
       
       <class name="com.vallabh.NewTestClass"/>

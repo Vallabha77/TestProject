@@ -17,8 +17,13 @@ private WebDriver d;
 		d.get("https://groww.in/");
 		d.navigate().refresh();
 	}
-	@Test
+	@Test(groups= {"Sanity Testing"})
 	public void mutualFundsTest() throws InterruptedException  {
+		GrowwFunctionsMutualFunds g=new GrowwFunctionsMutualFunds(d);
+		g.start();
+	}
+	@Test(groups= {"Sanity Testing"})
+	public void mutualFundsTest2() throws InterruptedException  {
 		GrowwFunctionsMutualFunds g=new GrowwFunctionsMutualFunds(d);
 		g.start();
 	}

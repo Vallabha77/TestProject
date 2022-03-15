@@ -35,7 +35,7 @@ public void forChrome(String browserName) {
 public void url() {
 	d.get("https://groww.in/");
 }
-@Test
+@Test(groups= "Regression Testing")
 public void test1() throws InterruptedException {
 		GrowwFunctionsMutualFunds g=new GrowwFunctionsMutualFunds(d);
 		g.start();

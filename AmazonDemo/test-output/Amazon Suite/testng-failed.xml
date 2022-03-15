@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.vallabh.ExtentReportListner"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.vallabh.ExtentTest">
+        <methods>
+          <include name="logintoApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.vallabh.ExtentTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <parameter name="browser" value="IE      "/>
+    <classes>
+      <class name="com.vallabh.ExtentTest">
+        <methods>
+          <include name="logintoApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.vallabh.ExtentTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Amazon Suite] -->

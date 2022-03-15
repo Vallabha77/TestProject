@@ -28,11 +28,11 @@ public class LoginPage {
 		
 	}
 	
-	public void Sendusername() {
-		username.sendKeys("admin");
+	public void Sendusername(String user) {
+		username.sendKeys(user);
 	}
-	public void Sendpassword() {
-		password.sendKeys("manager");
+	public void Sendpassword(String pass) {
+		password.sendKeys(pass);
 	}
 	public void checkbox() {
 		if(! keepmelogincheckbox.isSelected()) {
@@ -45,15 +45,15 @@ public class LoginPage {
 	public void clickLogin() {
 		login.click();
 	}
-	public void LogintoApplication() {
-		username.sendKeys("admin");	password.sendKeys("manager"); 
-		this.driver=driver;
-		if(! keepmelogincheckbox.isSelected()) {
-			keepmelogincheckbox.click();
-		}
-		else {
-			System.out.println("Checkbox already Selected..");
-		}
-		login.click();
-	}
+//	public void LogintoApplication() {
+//		username.sendKeys("admin");	password.sendKeys("manager"); 
+//	//	this.driver=driver;
+//		if(! keepmelogincheckbox.isSelected()) {
+//			keepmelogincheckbox.click();
+//		}
+//		else {
+//			System.out.println("Checkbox already Selected..");
+//		}
+//		login.click();
+//	}
 }

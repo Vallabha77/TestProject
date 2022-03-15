@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity Testing"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vallabh.GrowwmfTest">
+        <methods>
+          <include name="mutualFundsTest"/>
+          <include name="mutualFundsTest2"/>
+        </methods>
+      </class> <!-- com.vallabh.GrowwmfTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
   <test thread-count="5" name="Test123(failed)">
     <parameter name="browser" value="IE"/>
     <classes>
-      <class name="com.vallabh.NewTestClass">
+      <class name="com.vallabh.GrowwmfTest">
         <methods>
-          <include name="test1"/>
-          <include name="url"/>
-          <include name="utility"/>
-          <include name="forChrome"/>
+          <include name="startup"/>
+          <include name="mutualFundsTest2"/>
         </methods>
-      </class> <!-- com.vallabh.NewTestClass -->
+      </class> <!-- com.vallabh.GrowwmfTest -->
     </classes>
   </test> <!-- Test123(failed) -->
 </suite> <!-- Failed suite [Suite] -->

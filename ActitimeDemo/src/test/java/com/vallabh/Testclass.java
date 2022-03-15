@@ -17,9 +17,9 @@ public class Testclass {
 		WebDriver d=new ChromeDriver();
 		d.get("http://localhost:8083/login.do");
 		
-		LoginPage lp=new LoginPage(d);
-		lp.Sendusername();	lp.Sendpassword();	lp.checkbox();	lp.clickLogin();
-		
+//		LoginPage lp=new LoginPage(d);
+//		lp.Sendusername();	lp.Sendpassword();	lp.checkbox();	lp.clickLogin();
+//		
 		ApplicationHeaderPage ap=new ApplicationHeaderPage(d);
 	//	ap.opentaskpage();	String url=d.getCurrentUrl();	String title=d.getTitle();
 		ArrayList<String> count=new ArrayList(d.findElements(By.tagName("//a")));

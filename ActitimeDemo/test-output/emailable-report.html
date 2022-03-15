@@ -8,11 +8,42 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">21,055</td><td></td><td></td></tr>
+<tr><th colspan="7"> ActiTime Suite</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">73</td><td>Sanity, Smoke</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">23</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test3</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">38</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">18</th><th class="num">0</th><th class="num attn">3</th><th class="num">134</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vallabh.TestNGdemo</td><td><a href="#m0">login</a></td><td rowspan="1">1645623191466</td><td rowspan="1">8394</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4"> ActiTime Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vallabh.TestClassusingTestNG</td><td><a href="#m0">test6</a></td><td rowspan="1">1646996562962</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.vallabh.TestClassusingTestNG</td><td><a href="#m1">test1</a></td><td rowspan="1">1646996562924</td><td rowspan="1">12</td></tr><tr class="passedeven"><td><a href="#m2">test2</a></td><td rowspan="3">1646996562942</td><td rowspan="3">2</td></tr><tr class="passedeven"><td><a href="#m3">test2</a></td></tr><tr class="passedeven"><td><a href="#m4">test2</a></td></tr><tr class="passedeven"><td><a href="#m5">test4</a></td><td rowspan="1">1646996562950</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m6">test5</a></td><td rowspan="1">1646996562955</td><td rowspan="1">3</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vallabh.TestClassusingTestNG</td><td><a href="#m7">test6</a></td><td rowspan="1">1646996563081</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.vallabh.TestClassusingTestNG</td><td><a href="#m8">test1</a></td><td rowspan="1">1646996563063</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m9">test2</a></td><td rowspan="3">1646996563074</td><td rowspan="3">1</td></tr><tr class="passedeven"><td><a href="#m10">test2</a></td></tr><tr class="passedeven"><td><a href="#m11">test2</a></td></tr><tr class="passedeven"><td><a href="#m12">test4</a></td><td rowspan="1">1646996563075</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m13">test5</a></td><td rowspan="1">1646996563079</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test3 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vallabh.TestClassusingTestNG</td><td><a href="#m14">test6</a></td><td rowspan="1">1646996563134</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.vallabh.TestClassusingTestNG</td><td><a href="#m15">test1</a></td><td rowspan="1">1646996563102</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m16">test2</a></td><td rowspan="3">1646996563109</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m17">test2</a></td></tr><tr class="passedeven"><td><a href="#m18">test2</a></td></tr><tr class="passedeven"><td><a href="#m19">test4</a></td><td rowspan="1">1646996563125</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m20">test5</a></td><td rowspan="1">1646996563131</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.vallabh.TestNGdemo#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">com.vallabh.TestClassusingTestNG#test6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at com.vallabh.TestClassusingTestNG.test6(TestClassusingTestNG.java:51)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.vallabh.TestClassusingTestNG#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.vallabh.TestClassusingTestNG#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.vallabh.TestClassusingTestNG#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m7">com.vallabh.TestClassusingTestNG#test6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at com.vallabh.TestClassusingTestNG.test6(TestClassusingTestNG.java:51)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.vallabh.TestClassusingTestNG#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.vallabh.TestClassusingTestNG#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.vallabh.TestClassusingTestNG#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test3</h2><h3 id="m14">com.vallabh.TestClassusingTestNG#test6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at com.vallabh.TestClassusingTestNG.test6(TestClassusingTestNG.java:51)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.vallabh.TestClassusingTestNG#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.vallabh.TestClassusingTestNG#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.vallabh.TestClassusingTestNG#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.vallabh.TestClassusingTestNG#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -3,12 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vallabh.TestNGdemo">
+      <class name="com.vallabh.TestClassusingTestNG">
         <methods>
-          <include name="init"/>
-          <include name="login"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="afterclasss"/>
+          <include name="test1"/>
+          <include name="test1"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.vallabh.TestNGdemo -->
+      </class> <!-- com.vallabh.TestClassusingTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
